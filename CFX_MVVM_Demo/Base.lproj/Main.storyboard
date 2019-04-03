@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CFX_MVVM_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRh-Rd-1BS">
+                                <rect key="frame" x="10" y="87" width="355" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hn7-xI-VLA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEV-HW-gMJ">
+                                <rect key="frame" x="10" y="147" width="355" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KCD-oG-49X"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5B-9K-KKk">
+                                <rect key="frame" x="10" y="387" width="355" height="40"/>
+                                <color key="backgroundColor" red="0.2666666667" green="0.58039215690000001" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hm0-q3-HmB"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bu-Wn-eR2">
+                                <rect key="frame" x="10" y="192" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3fF-pG-sEZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.140257243" blue="0.22679700059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DRh-Rd-1BS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="67H-XM-fJ9"/>
+                            <constraint firstItem="k5B-9K-KKk" firstAttribute="leading" secondItem="VEV-HW-gMJ" secondAttribute="leading" id="Eza-Kd-6zl"/>
+                            <constraint firstItem="7Bu-Wn-eR2" firstAttribute="top" secondItem="VEV-HW-gMJ" secondAttribute="bottom" constant="5" id="FdJ-tY-M9n"/>
+                            <constraint firstItem="VEV-HW-gMJ" firstAttribute="top" secondItem="DRh-Rd-1BS" secondAttribute="bottom" constant="20" id="RZ3-y9-MOD"/>
+                            <constraint firstItem="7Bu-Wn-eR2" firstAttribute="trailing" secondItem="VEV-HW-gMJ" secondAttribute="trailing" id="TeG-Vn-Hyo"/>
+                            <constraint firstItem="7Bu-Wn-eR2" firstAttribute="leading" secondItem="VEV-HW-gMJ" secondAttribute="leading" id="U4w-0J-4N8"/>
+                            <constraint firstItem="DRh-Rd-1BS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Ywr-31-3gR"/>
+                            <constraint firstItem="k5B-9K-KKk" firstAttribute="top" secondItem="VEV-HW-gMJ" secondAttribute="bottom" constant="200" id="dOV-VL-3cb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DRh-Rd-1BS" secondAttribute="trailing" constant="10" id="kzE-Fd-Nmz"/>
+                            <constraint firstItem="VEV-HW-gMJ" firstAttribute="trailing" secondItem="DRh-Rd-1BS" secondAttribute="trailing" id="lj7-Uf-0Cz"/>
+                            <constraint firstItem="k5B-9K-KKk" firstAttribute="trailing" secondItem="VEV-HW-gMJ" secondAttribute="trailing" id="rDb-GK-T4h"/>
+                            <constraint firstItem="VEV-HW-gMJ" firstAttribute="leading" secondItem="DRh-Rd-1BS" secondAttribute="leading" id="vcg-7X-54n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountLabel" destination="DRh-Rd-1BS" id="MWi-BH-zEr"/>
+                        <outlet property="loginButton" destination="k5B-9K-KKk" id="TDe-Wc-qCm"/>
+                        <outlet property="passwordLabel" destination="VEV-HW-gMJ" id="JSc-TP-eTc"/>
+                        <outlet property="warningLabel" destination="7Bu-Wn-eR2" id="2Wr-L7-jsm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
